@@ -11,7 +11,7 @@ script:
  - cd boostdir
  - git clone --depth=50 --branch=master https://github.com/boostorg/boost.git
  - mkdir ../src/boost
- - ls
- - cp ./lib/thread ../src/boost -r
+ - ls ./boost
+ - cp ./boost/lib/thread ../src/boost -r
  - qmake
  - make
