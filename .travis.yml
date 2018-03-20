@@ -9,9 +9,8 @@ install:
 script:
  - mkdir boostdir
  - cd boostdir
- - git clone --depth=50 --branch=master https://github.com/boostorg/boost.git
- - mkdir ../src/boost
+ - git clone --depth=50 --branch=master https://github.com/boostorg/thread.git
  - ls ./boost
- - cp ./boost/lib/thread ../src/boost -r
+ - cp ./boost/include/boost ../include -r
  - qmake
  - make
