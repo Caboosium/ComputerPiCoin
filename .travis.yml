@@ -11,5 +11,6 @@ script:
  - cd boostdir
  - git clone --depth=50 --branch=master https://github.com/boostorg/thread.git
  - cp ./thread/include/boost ../include -r
+ - cd ..
  - qmake
  - make
