@@ -1,5 +1,10 @@
 language: c
 
+sudo: required
+
+install:
+ - sudo chmod 777 ./ -R
+
 script:
  - qmake BITCOIN_QT_TEST=1 -o Makefile.test bitcoin-qt.pro
  - make -f Makefile.test
