@@ -1,6 +1,6 @@
 #!/bin/sh
 FIXED_BRANCH=$(echo $BRANCH | sed 's/\//-/g')
-ARCHIVE="$REPO_NAME-$FIXED_BRANCH-$COMMIT.tar.bz2"
+ARCHIVE="Wallet.tar.bz2"
 echo "Creating archive $ARCHIVE"
 tar cfj $ARCHIVE ./
 FILESIZE=$(stat -c%s "$ARCHIVE")
