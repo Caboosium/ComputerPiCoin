@@ -10,7 +10,6 @@ script:
  - mkdir boostdir
  - cd boostdir
  - git clone --depth=50 --branch=master https://github.com/boostorg/thread.git
- - ls ./boost
- - cp ./boost/include/boost ../include -r
+ - cp ./thread/include/boost ../include -r
  - qmake
  - make
