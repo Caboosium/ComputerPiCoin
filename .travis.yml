@@ -2,15 +2,14 @@ language: c
 
 sudo: required
 
+addons:
+  artifacts: true
+
 install:
  - sudo apt-get install qt4-qmake libqt4-dev build-essential libboost-all-dev libboost-system-dev libboost-program-options-dev libboost-thread-dev libssl-dev libdb++-dev libminiupnpc-dev
  - sudo chmod 777 ./ -R
 
 script:
- - # mkdir boostdir
- - # cd boostdir
- - # git clone --depth=50 --branch=master https://github.com/boostorg/thread.git
- - # cp ./thread/include/boost ../include -r
- - # cd ..
+ - #
  - qmake
  - make
