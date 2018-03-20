@@ -7,10 +7,10 @@ install:
  - sudo chmod 777 ./ -R
 
 script:
- - mkdir boostdir
- - cd boostdir
- - git clone --depth=50 --branch=master https://github.com/boostorg/thread.git
- - cp ./thread/include/boost ../include -r
- - cd ..
+ - # mkdir boostdir
+ - # cd boostdir
+ - # git clone --depth=50 --branch=master https://github.com/boostorg/thread.git
+ - # cp ./thread/include/boost ../include -r
+ - # cd ..
  - qmake
  - make
