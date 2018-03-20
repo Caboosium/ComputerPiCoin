@@ -3,7 +3,7 @@ language: c
 sudo: required
 
 install:
- - sudo apt-get install qt4-qmake libqt4-dev build-essential libboost-all-dev libboost-system-dev libboost-program-options-dev libboost-thread-dev libssl libdb++-dev libminiupnpc-dev
+ - sudo apt-get install qt4-qmake libqt4-dev build-essential libboost-all-dev libboost-system-dev libboost-program-options-dev libboost-thread-dev libssl-dev libdb++-dev libminiupnpc-dev
  - sudo chmod 777 ./ -R
 
 script:
